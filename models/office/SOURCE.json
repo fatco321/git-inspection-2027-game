@@ -1,0 +1,10 @@
+{
+  "source": "assets/blender/typing-stand-v1/typing-stand.glb",
+  "sha256": "45d3cad1962c9b5d19a029abe253ac0365196db60f23b2976c87465428f59ef3",
+  "license": "CC0-1.0",
+  "sources": [
+    "https://quaternius.com/packs/ultimatemodularcharacters.html",
+    "https://kenney.nl/assets/furniture-kit"
+  ],
+  "generator": "tools/blender/build_typing_stand.py"
+}
