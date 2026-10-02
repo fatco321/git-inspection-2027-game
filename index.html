@@ -5,53 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#b7c9cc" />
     <title>Кабинет специалиста</title>
-    <script type="module" crossorigin src="./assets/index-rCy3393n.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-D-i-XBaP.js">
-    <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-UtxC_Odd.js">
-    <link rel="modulepreload" crossorigin href="./assets/engineStore-Bn2tApal.js">
-    <link rel="modulepreload" crossorigin href="./assets/typeStore-Cu_sj2zM.js">
-    <link rel="modulepreload" crossorigin href="./assets/math.color.pure-DjU-tlPj.js">
-    <link rel="modulepreload" crossorigin href="./assets/domManagement-BqltO0ki.js">
-    <link rel="modulepreload" crossorigin href="./assets/logger-CuBYPcDK.js">
-    <link rel="modulepreload" crossorigin href="./assets/tools.functions-PPH2Ush9.js">
-    <link rel="modulepreload" crossorigin href="./assets/halfFloat-Ce77JD5z.js">
-    <link rel="modulepreload" crossorigin href="./assets/guid-BXdVC_j_.js">
-    <link rel="modulepreload" crossorigin href="./assets/tools.pure-GwZgQFDE.js">
-    <link rel="modulepreload" crossorigin href="./assets/decorators-BWcttrMP.js">
-    <link rel="modulepreload" crossorigin href="./assets/decorators.serialization-12mQlhYw.js">
-    <link rel="modulepreload" crossorigin href="./assets/smartArray-BRfcgNbX.js">
-    <link rel="modulepreload" crossorigin href="./assets/node-DkTKxRlx.js">
-    <link rel="modulepreload" crossorigin href="./assets/shaderStore-D-XQlhUT.js">
-    <link rel="modulepreload" crossorigin href="./assets/internalTexture-ziUdfT1O.js">
-    <link rel="modulepreload" crossorigin href="./assets/abstractEngine.pure-B-Lwuv1u.js">
-    <link rel="modulepreload" crossorigin href="./assets/thinEngine.pure-DnTVD40q.js">
-    <link rel="modulepreload" crossorigin href="./assets/buffer.pure-DbeEbpvZ.js">
-    <link rel="modulepreload" crossorigin href="./assets/preload-helper-BXjlxWN3.js">
-    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-eMEteGnK.js">
-    <link rel="modulepreload" crossorigin href="./assets/math.plane-CX_iCdQT.js">
-    <link rel="modulepreload" crossorigin href="./assets/lightConstants-Dt0pYKce.js">
-    <link rel="modulepreload" crossorigin href="./assets/renderingManager-CbreMhFw.js">
-    <link rel="modulepreload" crossorigin href="./assets/material.pure-CYuuOYBr.js">
-    <link rel="modulepreload" crossorigin href="./assets/math.size-BHZaDYSv.js">
-    <link rel="modulepreload" crossorigin href="./assets/baseTexture.pure-D1eYXOPa.js">
-    <link rel="modulepreload" crossorigin href="./assets/texture.pure-D_-DxloG.js">
-    <link rel="modulepreload" crossorigin href="./assets/imageProcessing-6piwXfcp.js">
-    <link rel="modulepreload" crossorigin href="./assets/pointerEvents-Is6InASE.js">
-    <link rel="modulepreload" crossorigin href="./assets/keyboardEvents-CGYiptFb.js">
-    <link rel="modulepreload" crossorigin href="./assets/sphericalPolynomial.pure-BZqlOQrr.js">
-    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-DLfUrunW.js">
-    <link rel="modulepreload" crossorigin href="./assets/constants-_wyaM_ID.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphInteger.pure-CZmJgkLp.js">
-    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-B7YTJV2W.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphBlock-BvA3nFKL.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphAssetsContext-WtUyuDAI.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphExecutionBlock-By8U33OH.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphExecutionBlockWithOutSignal-B-77GRkT.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphAsyncExecutionBlock-CW1nKyeV.js">
-    <link rel="modulepreload" crossorigin href="./assets/flowGraphRichTypes.pure-CNXDMa_o.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-BSVds6B4.css">
+      <style>#game-loading{z-index:9000;color:#dceee7;text-align:center;overscroll-behavior:contain;background:radial-gradient(#284b53,#152b36);place-content:center;justify-items:center;gap:22px;padding:24px;font:500 clamp(18px,4vw,24px)/1.5 system-ui,sans-serif;transition:opacity .4s;display:grid;position:fixed;inset:0}#game-loading p{max-width:460px;margin:0}#game-loading.leaving{opacity:0;pointer-events:none}.loading-ring{border:3px solid #729c9638;border-top-color:#b5e6d4;border-radius:50%;width:48px;height:48px;animation:1.1s linear infinite loading-spin}#game-loading button{font:inherit;color:#143d44;cursor:pointer;background:#bfddd0;border:1px solid #9dc8bc;border-radius:9px;padding:12px 28px;font-size:17px}#game-loading button:focus-visible{outline-offset:4px;outline:3px solid #efc677}#game-loading[hidden],#game-loading [hidden]{display:none}@keyframes loading-spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.loading-ring{animation:none}#game-loading{transition:none}}</style>
+      <script>
+      // Vite replaces the module tag, so listen before the generated entry loads.
+      (() => {
+        const isEntry = event => event.target instanceof HTMLScriptElement && event.target.type === 'module';
+        const cleanup = () => {
+          document.removeEventListener('error', failed, true);
+          document.removeEventListener('load', loaded, true);
+        };
+        const loaded = event => { if (isEntry(event)) cleanup(); };
+        const failed = event => {
+          if (!isEntry(event)) return;
+          cleanup();
+          const show = () => {
+            const panel = document.getElementById('game-loading');
+            if (!panel) return;
+            panel.hidden = false;
+            panel.querySelector('p').textContent = 'Не удалось загрузить игру. Проверьте соединение и попробуйте снова.';
+            panel.querySelector('.loading-ring').hidden = true;
+            panel.querySelector('button').hidden = false;
+            panel.setAttribute('aria-busy', 'false');
+          };
+          if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show, {once:true});
+          else show();
+        };
+        document.addEventListener('error', failed, true);
+        document.addEventListener('load', loaded, true);
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-ggekRxN9.js"></script>
   </head>
   <body>
+    <section id="game-loading" role="status" aria-live="polite" aria-busy="true">
+      <div class="loading-ring" aria-hidden="true"></div>
+      <p>Загружаем мир…</p>
+      <button type="button" hidden onclick="location.reload()">Повторить</button>
+    </section>
     <canvas id="game" aria-label="Трёхмерная сцена кабинета" tabindex="0"></canvas>
   </body>
 </html>
